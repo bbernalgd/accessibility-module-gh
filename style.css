@@ -319,6 +319,8 @@ nav > ul > li:last-child > a {
   display: flex;
   margin-bottom: 21px;
   gap: 24px;
+  max-width: 22px;
+  max-height: 22px;
 }
 
 .contact-us_content > ul > li > a,
@@ -568,7 +570,7 @@ nav > ul > li:last-child > a {
   font-weight: 400;
   font-size: 14px;
   line-height: 145%;
-  color: rgba(17, 17, 17, 0.5);
+  color: rgb(17 17 17 / 58%);
 }
 
 .footer-links-3 {

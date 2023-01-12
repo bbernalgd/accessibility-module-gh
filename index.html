@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Plant Me website">
+    <meta name="author" content="Brenda Bernal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plant Me</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,12 +26,12 @@
       <span class="logo"></span>
       <nav class="nav-bar">
         <ul>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Site Map</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/">Site Map</a></li>
           <li>
-            <a href="">Eng<button aria-label="dropdown menu for language" aria-pressed=false class="nav_dropdown-btn"></button></a>
+            <a href="/">Eng<button aria-label="dropdown menu for language" aria-pressed=false class="nav_dropdown-btn"></button></a>
           </li>
         </ul>
       </nav>
@@ -46,14 +49,14 @@
       </div>
       <div class="hamburguer_container">
         <div id="myLinks">
-          <a href="">About Us</a>
-          <a href="">Contact Us</a>
-          <a href="">Blog</a>
-          <a href="">Site Map</a>
+          <a href="#about-us">About Us</a>
+          <a href="#contact-us">Contact Us</a>
+          <a href="/">Blog</a>
+          <a href="/">Site Map</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <button class="icon" onclick="myFunction()" aria-label="menu">
           <i class="fa fa-bars fa-2x"></i>
-        </a>
+        </button>
       </div>
     </header>
     <main>
@@ -62,7 +65,7 @@
           <article class="hero_article_container">
             <div class="hero_article">
               <h1 class="hero_title">Lorem ipsum dolor sit amet</h1>
-              <h4 class="hero_subtitle">Lorem ipsum dolor sit amet</h4>
+              <h2 class="hero_subtitle">Lorem ipsum dolor sit amet</h2>
               <p class="hero_paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Eleifend tincidunt posuere eu risus cursus. Senectus sed
@@ -85,7 +88,7 @@
           <article>
             <div class="about-us_content">
               <div class="about-us_article">
-                <h4 class="about-us_title">About Us</h4>
+                <h1 class="about-us_title">About Us</h1>
                 <p class="about-us_paragraph">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Eleifend tincidunt posuere eu risus cursus. Senectus sed
@@ -96,7 +99,7 @@
                   consectetur adipiscing elit. Eleifend tincidunt posuere eu
                   risus cursus.
                 </p>
-                <a class="about-us_link" href="">Learn more about →</a>
+                <a class="about-us_link" href="/">Learn more about →</a>
               </div>
               <img class="about-us_img" src="./images/about-us.png" alt="plant with green leaves" />
             </div>
@@ -104,7 +107,7 @@
           <article>
             <div class="about-us_content">
               <div class="about-us_article">
-                <h4 class="about-us_title">About Us 2</h4>
+                <h1 class="about-us_title">About Us 2</h1>
                 <p class="about-us_paragraph">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Eleifend tincidunt posuere eu risus cursus. Senectus sed
@@ -115,7 +118,7 @@
                   consectetur adipiscing elit. Eleifend tincidunt posuere eu
                   risus cursus.
                 </p>
-                <a class="about-us_link" href="">Learn more about →</a>
+                <a class="about-us_link" href="/">Learn more about →</a>
               </div>
               <img class="about-us_img" src="./images/about-us.png" alt="plant with green leaves" />
             </div>
@@ -145,13 +148,13 @@
               </li>
             </ul>
             <div class="social-media_links">
-              <a href="http://"
+              <a href="https://www.facebook.com" aria-label="Visit Plant Me Facebook page"
                 ><img src="./images/icons/facebook-icon.svg" alt=""
               /></a>
-              <a href="http://"
+              <a href="https://www.facebook.com" aria-label="Visit Plant Me Facebook page"
                 ><img src="./images/icons/facebook-icon.svg" alt=""
               /></a>
-              <a href="http://"
+              <a href="https://www.facebook.com" aria-label="Visit Plant Me Facebook page"
                 ><img src="./images/icons/facebook-icon.svg" alt=""
               /></a>
             </div>
@@ -160,34 +163,34 @@
             <form action="">
               <div class="contact-us_input-group">
                 <div class="contact-us_input">
-                  <label for="name" aria-required="true" required
+                  <label for="first-name" aria-required="true" required
                     ><span>*</span> First Name</label
                   >
-                  <input type="text" name="name" id="name" placeholder="John" aria-placeholder="name input"/>
+                  <input type="text" name="first name" id="first-name" placeholder="John" aria-placeholder="name"/>
                 </div>
                 <div class="contact-us_input">
-                  <label for="lastName" aria-required="true" required
+                  <label for="last-name" aria-required="true" required
                     ><span>*</span> Last Name</label
                   >
-                  <input type="text" name="lastName" id="lastName" placeholder="Doe" aria-placeholder="last name input"/>
+                  <input type="text" name="last name" id="last-name" placeholder="Doe" aria-placeholder="last name"/>
                 </div>
               </div>
               <div class="contact-us_input-group">
                 <div class="contact-us_input">
                   <label for="email">Email</label>
-                  <input type="email" name="email" id="email" placeholder="example@gmail.com" aria-placeholder="email input"/>
+                  <input type="email" name="email" id="email" placeholder="example@gmail.com" aria-placeholder="email"/>
                 </div>
                 <div class="contact-us_input">
-                  <label for="phone" aria-required="true" required 
+                  <label for="phone-number" aria-required="true" required
                     >Phone Number</label
                   >
                   <input
                     type="tel"
-                    name="phone"
-                    id="phone"
+                    name="phone number"
+                    id="phone-number"
                     pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                     placeholder="00 000 00 00"
-                    aria-placeholder="phone input"
+                    aria-placeholder="phone number"
                   />
                 </div>
               </div>
@@ -294,15 +297,15 @@
         </div>
         <div class="footer-links">
           <ul>
-            <li><a href="http://">About Us</a></li>
-            <li><a href="http://">Contact Us</a></li>
-            <li><a href="http://">Blog</a></li>
-            <li><a href="http://">Site Map</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Site Map</a></li>
           </ul>
         </div>
         <div class="footer-links footer-contact_links">
           <ul>
-            <li><a href="http://">Contacts</a></li>
+            <li><a href="#contact-us">Contacts</a></li>
             <li id="footer-contact_link">
               <a href="tel:+38-063-072-0121">+38 063 072 0121</a>
             </li>
@@ -322,9 +325,9 @@
         <span></span>
         <p>© 2022 PlantMe. All Rights Reserved</p>
         <ul class="footer-links-3">
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms of service</a></li>
-          <li><a href="">Language</a></li>
+          <li><a href="/">Privacy Policy</a></li>
+          <li><a href="/">Terms of service</a></li>
+          <li><a href="/">Language</a></li>
         </ul>
       </div>
     </footer>
