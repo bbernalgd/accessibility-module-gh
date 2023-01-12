@@ -1,0 +1,163 @@
+@media screen and (min-width: 1200px) {
+  .contact-radio_inputs-group {
+    flex-wrap: nowrap;
+  }
+
+  .contact-us_input-group {
+    flex-direction: row;
+  }
+
+  .contact-us_input > label {
+    margin-right: 0;
+  }
+
+  .contact-us_input-group {
+    margin-bottom: 25px;
+  }
+
+  .contact-us_title {
+    font-size: 48px;
+  }
+
+  .footer-copyright > p {
+    flex-basis: 33.3%;
+    text-align: center;
+  }
+
+  .footer-copyright > span {
+    flex-basis: 33.3%;
+  }
+
+  .footer-links-3 {
+    text-align: end;
+    flex-basis: 33.3%;
+  }
+
+  .contact-us_input > input {
+    max-width: 416px;
+  }
+}
+
+@media screen and (min-width: 1039px) {
+  .footer_container {
+    flex-direction: row;
+    gap: 0;
+  }
+  .about-us_container {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero_container {
+    flex-direction: row;
+  }
+
+  .hamburguer_container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-us_input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  #site-search {
+    width: 200px;
+  }
+
+  nav > ul > li > a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .nav-bar,
+  #site-search,
+  .search-btn {
+    display: none;
+  }
+
+  nav {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .hero_image > img {
+    max-width: 596px;
+  }
+
+  .contact-us_input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero_article {
+    padding-right: 0;
+  }
+
+  .hero_container {
+    gap: 18px;
+  }
+
+  .contact-us_container {
+    max-width: 647px;
+    flex-direction: column;
+  }
+  .contact-us_content {
+    max-width: 100%;
+  }
+
+  .contact-us_input > input {
+    max-width: 100%;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+  }
+
+  .footer-links-3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .contact-us_content > ul {
+    margin-bottom: 115px;
+  }
+
+  .about-us_content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .contact-us_form {
+    margin: 0;
+  }
+
+  .contact-us_terms_container {
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-radio_inputs-group {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-subscribe {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
