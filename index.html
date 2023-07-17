@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CX4B41QMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4CX4B41QMS');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NW9DTXCB');</script>
+  <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="description" content="Plant Me website">
-    <meta name="author" content="Brenda Bernal">
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Plant Me website" />
+    <meta name="author" content="Brenda Bernal" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plant Me</title>
     <link rel="stylesheet" href="./style.css" />
@@ -20,17 +36,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2TFEVCPR9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-E2TFEVCPR9');
-    </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW9DTXCB"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <header>
       <span class="logo"></span>
       <nav class="nav-bar">
@@ -40,7 +51,13 @@
           <li><a href="/">Blog</a></li>
           <li><a href="/">Site Map</a></li>
           <li>
-            <a href="/">Eng<button aria-label="dropdown menu for language" aria-pressed=false class="nav_dropdown-btn"></button></a>
+            <a href="/"
+              >Eng<button
+                aria-label="dropdown menu for language"
+                aria-pressed="false"
+                class="nav_dropdown-btn"
+              ></button
+            ></a>
           </li>
         </ul>
       </nav>
@@ -52,7 +69,11 @@
           name="q"
           placeholder="Search this site"
         />
-        <button class="search-btn" aria-pressed=false aria-label="Search button">
+        <button
+          class="search-btn"
+          aria-pressed="false"
+          aria-label="Search button"
+        >
           <span class="search-btn-logo"></span>
         </button>
       </div>
@@ -84,7 +105,9 @@
                 morbi sed gravida. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit.
               </p>
-              <button class="hero-btn green-btn" aria-pressed=false>Buy Now</button>
+              <button id="buy_now" class="hero-btn green-btn" aria-pressed="false">
+                Buy Now
+              </button>
             </div>
           </article>
           <div class="hero_image">
@@ -110,7 +133,11 @@
                 </p>
                 <a class="about-us_link" href="/">Learn more about →</a>
               </div>
-              <img class="about-us_img" src="./images/about-us.png" alt="plant with green leaves" />
+              <img
+                class="about-us_img"
+                src="./images/about-us.png"
+                alt="plant with green leaves"
+              />
             </div>
           </article>
           <article>
@@ -129,7 +156,11 @@
                 </p>
                 <a class="about-us_link" href="/">Learn more about →</a>
               </div>
-              <img class="about-us_img" src="./images/about-us.png" alt="plant with green leaves" />
+              <img
+                class="about-us_img"
+                src="./images/about-us.png"
+                alt="plant with green leaves"
+              />
             </div>
           </article>
         </div>
@@ -157,13 +188,19 @@
               </li>
             </ul>
             <div class="social-media_links">
-              <a href="https://www.facebook.com" aria-label="Visit Plant Me Facebook page"
+              <a
+                href="https://www.facebook.com"
+                aria-label="Visit Plant Me Facebook page"
                 ><img src="./images/icons/facebook-icon.svg" alt=""
               /></a>
-              <a href="https://www.facebook.com" aria-label="Visit Plant Me Facebook page"
+              <a
+                href="https://www.facebook.com"
+                aria-label="Visit Plant Me Facebook page"
                 ><img src="./images/icons/facebook-icon.svg" alt=""
               /></a>
-              <a href="https://www.facebook.com" aria-label="Visit Plant Me Facebook page"
+              <a
+                href="https://www.facebook.com"
+                aria-label="Visit Plant Me Facebook page"
                 ><img src="./images/icons/facebook-icon.svg" alt=""
               /></a>
             </div>
@@ -175,19 +212,37 @@
                   <label for="first-name" aria-required="true" required
                     ><span>*</span> First Name</label
                   >
-                  <input type="text" name="first name" id="first-name" placeholder="John" aria-placeholder="name"/>
+                  <input
+                    type="text"
+                    name="first name"
+                    id="first-name"
+                    placeholder="John"
+                    aria-placeholder="name"
+                  />
                 </div>
                 <div class="contact-us_input">
                   <label for="last-name" aria-required="true" required
                     ><span>*</span> Last Name</label
                   >
-                  <input type="text" name="last name" id="last-name" placeholder="Doe" aria-placeholder="last name"/>
+                  <input
+                    type="text"
+                    name="last name"
+                    id="last-name"
+                    placeholder="Doe"
+                    aria-placeholder="last name"
+                  />
                 </div>
               </div>
               <div class="contact-us_input-group">
                 <div class="contact-us_input">
                   <label for="email">Email</label>
-                  <input type="email" name="email" id="email" placeholder="example@gmail.com" aria-placeholder="email"/>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    aria-placeholder="email"
+                  />
                 </div>
                 <div class="contact-us_input">
                   <label for="phone-number" aria-required="true" required
@@ -276,7 +331,11 @@
                   />
                 </div>
               </div>
-              <button class="contact-us_form-btn green-btn" type="submit" aria-pressed=false>
+              <button
+                class="contact-us_form-btn green-btn"
+                type="submit"
+                aria-pressed="false"
+              >
                 Send Message
               </button>
             </form>
@@ -299,7 +358,11 @@
               id="subscribe"
               placeholder="example@gmail.com"
             />
-            <button class="subscribe-btn green-btn" type="submit" aria-pressed=false>
+            <button
+              class="subscribe-btn green-btn"
+              type="submit"
+              aria-pressed="false"
+            >
               Subscribe
             </button>
           </form>
